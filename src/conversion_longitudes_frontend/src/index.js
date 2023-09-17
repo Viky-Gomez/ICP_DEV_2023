@@ -2,18 +2,19 @@ import { conversion_longitudes_backend } from "../../declarations/conversion_lon
 
 document.querySelector("form").addEventListener("submit", async (e) => {
   e.preventDefault();
-  const button = e.target.querySelector("button");
 
-  const name = document.getElementById("name").value.toString();
+  const button = e.target.querySelector("button");
+  const value = parseFloat(document.getElementById("value").value);
+  const fromUnit = document.getElementById("fromUnit").value;
+  const toUnit = document.getElementById("toUnit").value;
 
   button.setAttribute("disabled", true);
 
-  // Interact with foo actor, calling the greet method
-  const greeting = await conversion_longitudes_backend.greet(name);
+  const result = await conversion_longitudes_backend.convertirLongitud(value, fromUnit, toUnit);
 
   button.removeAttribute("disabled");
 
-  document.getElementById("greeting").innerText = greeting;
+  document.getElementById("result").innerText = result;
 
   return false;
 });

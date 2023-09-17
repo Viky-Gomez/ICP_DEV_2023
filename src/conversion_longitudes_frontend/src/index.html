@@ -1,24 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>conversion_longitudes</title>
-    <base href="/" />
-    <link rel="icon" href="favicon.ico" />
-    <link type="text/css" rel="stylesheet" href="main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Convertidor de Longitudes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   </head>
   <body>
-    <main>
-      <img src="logo2.svg" alt="DFINITY logo" />
-      <br />
-      <br />
-      <form action="#">
-        <label for="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
+    <div class="container">
+      <h1 class="text-center my-4" style="color: rgb(58, 118, 120); font-weight: bold;">Convertidor de Longitudes</h1>
+      <form>
+        <div class="form-group">
+          <p><small>Modo de uso: Sólo ingresa la abreviación correspondiente de las longitudes a convertir.</small></p>
+          <h4 for="value">Valor a convertir:</h4>
+          <input id="value" type="number" step="any" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <h4 for="fromUnit">De:</h4>
+          <input id="fromUnit" type="text" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <h4 for="toUnit">A:</h4>
+          <input id="toUnit" type="text" class="form-control" required />
+        </div>
+        <div align="center">
+          <button type="submit" class="btn btn-success" style="font-weight: bold;">Convertir</button>
+        </div>
       </form>
-      <section id="greeting"></section>
-    </main>
+      <div>
+        <p style="font-weight: bold;">Equivale a: <h6 id="result" class="mt-4"></h6></p>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="module" src="app.js"></script>
   </body>
 </html>

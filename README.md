@@ -1,4 +1,7 @@
-# ICP Developer - Proyecto de Certificación
+# ICP Developer - Proyecto de Certificación: Convertidor de longitudes
+
+### Justificación:
+El desarrollo de este proyecto se enfocó en poder automatizar algunos cálculos del sistema métrico, con el propósito de reducir la probabilidad de cometer un error y garantizando un resultado preciso dependiendo de la conversión que se desee obtener.
 
 ### Deploy del proyecto:
 

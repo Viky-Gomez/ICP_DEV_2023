@@ -4,7 +4,7 @@
 
 1. Clonar el repositorio:
 ```
-https://github.com/Viky-Gomez/ICP.git
+https://github.com/Viky-Gomez/ICP_DEV_2023.git
 ```
 
 2. Ubicarse en la carpeta del proyecto.
